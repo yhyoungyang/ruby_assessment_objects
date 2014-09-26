@@ -20,6 +20,6 @@
 
 
 #### Question 5
-# Write code that would create a new instance of the `Pet` class with the
-# name "Reginald". Assuming the `Pet` class had a setter for "name", write
-# code that would change Reginald's name to "Snookums".
+# Write code to create a new array containing 3 dog names (as strings).
+# Then write code to add the string "is a good dog!" to every name. 
+# Save the result in a new array, but don't output anything to the Terminal.
