@@ -1,5 +1,6 @@
 #### Question 1
-# Define a class called `Pet`, and a class `Dog` that inherits from `Pet`.
+# Define an empty class called `Pet`, and an empty class `Dog` that inherits from `Pet`.
+# These classes should not contain anything yet. 
 
 
 #### Question 2
@@ -23,3 +24,4 @@
 # Write code to create a new array containing 3 dog names (as strings).
 # Then write code to add the string "is a good dog!" to every name. 
 # Save the result in a new array, but don't output anything to the Terminal.
+# Note: this question has nothing to do with classes!
