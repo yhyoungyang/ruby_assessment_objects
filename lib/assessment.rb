@@ -1,34 +1,27 @@
-# Question 1
-# This function should take an integer as an argument
-# and output a string that contains that integer that number of times in a row
-# Do not use puts!
-# For example:
-# string_it_x_times(4) #=> "4444"
-# string_it_x_times(2) #=> "22"
-def string_it_x_times(x)
-end
+#### Question 1
+# Define an empty class called `Pet`, and an empty class `Dog` that inherits from `Pet`.
+# These classes should not contain anything yet.
 
-# Question 2
-# This function should take an integer as an argument
-# and will return the string of "fizz" if the number is divisible by 3,
-# it will return "buzz" if it is divisible by 5,
-# it will return "fizzbuzz" if it is divisible by 3 and 5
-# and will return the original integer if it is divisible by neither
-# Do not use puts!
-# For example:
-# fizz_or_buzz(3) #=> "fizz"
-# fizz_or_buzz(10) #=> "buzz"
-# fizz_or_buzz(15) #=> "fizzbuzz"
-# fizz_or_buzz(2) #=> 2
-def fizz_or_buzz(x)
-end
+#### Question 2
+# Add an initializer to the `Pet` class that accepts two arguments
+# the first called called name and stores the value as an instance variable,
+# the second called sound, which has a default value of 'woof'
+# and stores the value as an instance variable
 
-# Question 3
-# This function should take an array and an element of any type
-# The function should return the array, with the element inserted at the end
-# Do not use puts!
+#### Question 3
+# Copy your class definitions from question 2 here.
+# Then add an instance method called `bark` to the `Dog` class that returns the
+# value of the sound instance variable.
+
+#### Question 4
+# Write a method call make_three_dogs that takes 3 strings as arguments
+# The method should create 3 instances of Dog, with those arguments as their names,
+# and then return an array containing the 3 instances of these dogs.
+
+#### Question 5
+# Write a method called all_dogs_bark, which takes an array of Dogs as an argument
+# The method should return an array of elements, which are strings
+# of the dog's name, the string ' says ' and the sounds they make when they bark
 # For example:
-# add_element_to_array([1, 2], 3) #=> [1, 2, 3]
-# add_element_to_array(['fizz', 'buzz'], 'baz') #=> ['fizz', 'buzz', 'baz']
-def add_element_to_array(array, item)
-end
+# all_dogs_bark([Dog.new('Lucy')]) #=> ['Lucy says woof']
+# all_dogs_bark([Dog.new('Lassie'), Dog.new('Kelly', 'growl')]) #=> ['Lucy says woof', 'Kelly says growl']
