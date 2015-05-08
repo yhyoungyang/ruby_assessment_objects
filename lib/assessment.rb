@@ -23,8 +23,7 @@ class Player < Person
   attr_accessor :health, :strength, :alive
 
   def take_damage(attack_strength)
-    @attack_strength = attack_strength
-    return @health - @attack_strength 
+    return @health -= attack_strength 
   end
 
   def attack(player)
@@ -34,17 +33,17 @@ end
 
 class Knight < Player
   def initialize(health = 50, strength = 7)
+    super
     @health = health
     @strength = strength 
-    super
   end 
 end
 
 class Wizard < Player
   def initialize(health = 20, strength = 75)
+    super
     @health = health
     @strength = strength 
-    super
   end 
 end
 
@@ -62,9 +61,10 @@ dumbledore = Wizard.new
 dumbledore.first_name = "Albus"
 dumbledore.last_name = "Dumbledore"
 dumbledore.full_name = "Albus Dumbledore"
+
 puts " dumbledore.Wizard => health:#{dumbledore.health}, strength: #{dumbledore.strength}"
 puts " dumbledore.Player => alive: #{dumbledore.alive}"
 puts " dumbledore.Person => first_name: #{dumbledore.first_name}, last_name:#{dumbledore.last_name}, full_name: #{dumbledore.full_name}"
 
-puts "Dumbledore's health after attacking Green: #{green.attack(dumbledore)}"
-puts "Green's health after attacking Dumbledore: #{dumbledore.attack(green)}"
+puts "Dumbledore's health after being attacked by Green: #{green.attack(dumbledore)}"
+puts "Green's health after after being attacked by Dumbledore: #{dumbledore.attack(green)}"
